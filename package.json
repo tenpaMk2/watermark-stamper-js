@@ -7,6 +7,7 @@
   "scripts": {
     "test": "node index.js --input inputs/ --output outputs/ --watermark watermarks/",
     "exe": "node index.js --input inputs/ --output outputs --watermark watermarks",
+    "jpeg": "node index.js -i inputs/ -o outputs/ -w watermarks/ -t \"jpg\" -j 80 -op 0.9",
     "help": "node index.js --help"
   },
   "repository": {
