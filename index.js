@@ -32,6 +32,26 @@ const parseJpegQuality = (value, dummyPrevious) => {
 };
 
 /**
+ * argument parser for Opacity.
+ * @param {number} value - opacity `0 < q <= 1` .
+ * @returns {number} opacity `0 < q <= 1` .
+ */
+const parseOpacity = (value, dummyPrevious) => {
+  const float = parseFloat(value);
+  if (isNaN(float)) {
+    throw new commander.InvalidArgumentError("Not a float number.");
+  }
+  if (float < 0) {
+    return 0;
+  }
+  if (1 < float) {
+    return 1;
+  }
+
+  return float;
+};
+
+/**
  * command parser
  */
 const program = new commander.Command();
@@ -56,7 +76,9 @@ program
     new commander.Option(
       "-op, --opacity <float>",
       "the opacity of watermark. `0 < op <= 1` "
-    ).default(0.2)
+    )
+      .default(0.2)
+      .argParser(parseOpacity)
   )
   .parse(process.argv);
 
