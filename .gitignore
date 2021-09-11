@@ -138,3 +138,7 @@ dist
 # mac
 
 .DS_Store
+
+# output
+
+/outputs
