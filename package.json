@@ -1,0 +1,35 @@
+{
+  "name": "watermark-stamper",
+  "version": "1.0.0",
+  "description": "add watermark (alpha .png) to your images.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node index.js --input inputs/ --output outputs/ --watermark watermarks/",
+    "exe": "node index.js --input inputs/ --output outputs --watermark watermarks",
+    "help": "node index.js --help"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tenpaMk2/watermark-stamper-js.git"
+  },
+  "keywords": [
+    "watermark",
+    "jimp"
+  ],
+  "author": "tenpaMk2",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tenpaMk2/watermark-stamper-js/issues"
+  },
+  "homepage": "https://github.com/tenpaMk2/watermark-stamper-js#readme",
+  "devDependencies": {
+    "jsdoc": "^3.6.7",
+    "prettier": "^2.4.0"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^8.2.0",
+    "jimp": "^0.16.1"
+  }
+}
