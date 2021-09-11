@@ -1,6 +1,6 @@
 {
   "name": "watermark-stamper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "add watermark (alpha .png) to your images.",
   "main": "index.js",
   "type": "module",
