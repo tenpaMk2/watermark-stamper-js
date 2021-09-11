@@ -2,6 +2,8 @@
 
 add watermark (alpha .png) to your images.
 
+![demo](./imgs/watermarked.png)
+
 ## Usage
 
 ```shell
